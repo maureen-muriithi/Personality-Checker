@@ -157,18 +157,13 @@ $(document).ready(function() {
             console.log("data",total)
         
         };
-        var form = document.getElementById("form"); 
-        form.addEventListener("submit", getPersonality);
 
-        function refreshForm(){
-            document.getElementById("results").innerHTML = "";
+    function refreshForm(){
+        document.getElementById("results").innerHTML="";
+    }
 
-
-        }
-        
-        var refreshButton = document.getElementById("refreshbtn");
-            refreshButton.addEventListener("reset", refreshForm);
-            
-       
-        console.log("moh", refreshButton)
+    var form = document.getElementById("form"); 
+    form.addEventListener("submit", getPersonality);
+    form.addEventListener("reset", refreshForm);
+     
 });    
