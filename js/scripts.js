@@ -2,7 +2,7 @@ $(document).ready(function() {
       
     $(function(){
         $('.carousel').carousel({
-          interval: 2000
+          interval: 1500
         });
     });
 
@@ -162,6 +162,7 @@ $(document).ready(function() {
 
         function refreshForm(){
             document.getElementById("results").innerHTML = "";
+
 
         }
         
